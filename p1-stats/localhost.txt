@@ -1,0 +1,14 @@
+Barbaras-MacBook-Pro:~ bribeiro$ cd /Users/bribeiro/Google\ Drive/2020\ Fall/EECS\ 280/p1-stats 
+Barbaras-MacBook-Pro:p1-stats bribeiro$ echo "Hello bdreyer"
+Hello bdreyer
+Barbaras-MacBook-Pro:p1-stats bribeiro$ hostname
+Barbaras-MacBook-Pro.local
+Barbaras-MacBook-Pro:p1-stats bribeiro$ make clean
+rm -rvf *.exe *~ *.out *.dSYM *.stackdump
+Barbaras-MacBook-Pro:p1-stats bribeiro$ make stats_tests.exe
+g++ --std=c++11 -Wall -Werror -pedantic -g stats_tests.cpp stats.cpp p1_library.cpp -o stats_tests.exe
+Barbaras-MacBook-Pro:p1-stats bribeiro$ make stats_public_test.exe
+g++ --std=c++11 -Wall -Werror -pedantic -g stats_public_test.cpp stats.cpp p1_library.cpp -o stats_public_test.exe
+Barbaras-MacBook-Pro:p1-stats bribeiro$ make main.exe
+g++ --std=c++11 -Wall -Werror -pedantic -g main.cpp stats.cpp p1_library.cpp -o main.exe
+Barbaras-MacBook-Pro:p1-stats bribeiro$ 
